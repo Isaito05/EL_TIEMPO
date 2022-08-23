@@ -7,6 +7,8 @@ namespace MI_TERRAZA.Models
         [Key]
         [Required(ErrorMessage ="Este campo es obligatorio")]
         public int CORPROV_ID { get; set; }
+        [EmailAddress(ErrorMessage = "Este campo debe contener @example.com")]
+        [Display(Name = "Correo :")]
         [Required(ErrorMessage = "Este campo es obligatorio")]
         public string CORPROV_DIRECCION { get; set; } = null!;
     }
