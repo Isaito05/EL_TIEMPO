@@ -5,11 +5,26 @@ namespace MI_TERRAZA.Models
     public class T_PRO_PROV
     {
 		[Key]
-		public int PROPROV_ID { get; set; } 
+		public int PROPROV_ID { get; set; }
+
+		[Required(ErrorMessage = "Este campo es obligatorio")]
+		[Display(Name = "Nombre Del Producto Suministrado Por El Proveedor :")]
 		public string PROPROV_NOMBRE { get; set; } = null!;
+
+		[Required(ErrorMessage = "Este campo es obligatorio")]
+		[Display(Name = "Cantidad Del Producto Suministrado Por El Proveedor : :")]
 		public string PROPROV_CANTIDAD { get; set; } = null!;
-		public decimal PROPROV_PRECIO_UNITARIO { get; set; } 
+
+		[Required(ErrorMessage = "Este campo es obligatorio")]
+		[Display(Name = "Precio Del Producto Suministrado Por El Proveedor : :")]
+		public decimal PROPROV_PRECIO_UNITARIO { get; set; }
+
+		[Required(ErrorMessage = "Este campo es obligatorio")]
+		[Display(Name = "Fecha Del Producto Suministrado Por El Proveedor : :")]
 		public DateTime PROPROV_FCH_INGRESO { get; set; }
+
+		[Required(ErrorMessage = "Este campo es obligatorio")]
+		[Display(Name = "Total Del Producto Suministrado Por El Proveedor : :")]
 		public decimal PROPROV_TOTAL { get; set; }
 	}
 }
