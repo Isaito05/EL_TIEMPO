@@ -20,7 +20,7 @@ namespace MI_TERRAZA.Models
         [Display(Name = "Genero :")]
         public string RGU_GENERO { get; set; } = null!;
         [Required(ErrorMessage = "Este campo es obligatorio")]
-        [Display(Name = "Fecha de nacimientoS :")]
+        [Display(Name = "Fecha de nacimientos :")]
         public DateTime RGU_FCH_NACIMIENTO { get; set; }
         
     }
