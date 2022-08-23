@@ -10,7 +10,7 @@ namespace MI_TERRAZA.Models
         [Display(Name = "ID Producto Del Proveedor :")]
         public int PROBOD_PROPROV_ID { get; set; }
 
-        [Required(ErrorMessage = "Este campo es obligatorio")]
+        [Required(ErrorMessage = "Este campo es Obligatorio")]
         [Display(Name = "Producto En Bodega:")]
         public int PROBOD_BOD_ID { get; set; } 
     }
