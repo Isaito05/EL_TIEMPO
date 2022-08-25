@@ -8,6 +8,12 @@ namespace MI_TERRAZA.Models
 		public int PROPROV_ID { get; set; }
 
 		[Required(ErrorMessage = "Este campo es obligatorio")]
+		[Display(Name = "ID del proveedor que Suministra el producto:")]
+		[ForeignKey("T_PROVEEDOR")]
+		public int PROPROV_PROV_ID { get; set; }
+		public T_PROVEEDOR? T_PROVEEDOR { get; set; }
+
+		[Required(ErrorMessage = "Este campo es obligatorio")]
 		[Display(Name = "Nombre Del Producto Suministrado Por El Proveedor :")]
 		public string PROPROV_NOMBRE { get; set; } = null!;
 
