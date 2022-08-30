@@ -4,6 +4,7 @@ namespace MI_TERRAZA.Models
 {
     public class T_PRESTAMO
     {
+        [Key]
         public int PRES_ID { get; set; }
 
         [Required(ErrorMessage = "Este campo es obligatorio")]

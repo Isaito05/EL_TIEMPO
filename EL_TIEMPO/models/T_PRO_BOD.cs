@@ -5,6 +5,7 @@ namespace MI_TERRAZA.Models
 {
     public class T_PRO_BOD
     {
+        [Key]
         public int PROBOD_ID { get; set; }
 
         [Required(ErrorMessage = "Este campo es obligatorio")]

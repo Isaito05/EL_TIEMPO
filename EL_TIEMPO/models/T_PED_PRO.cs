@@ -5,6 +5,7 @@ namespace MI_TERRAZA.Models
 {
     public class T_PED_PRO
     {
+        [Key]
         public int PEDPRO_ID { get; set; }
         [Required(ErrorMessage = "Este campo es obligatorio")]
         [Display(Name = "Cantidad :")]

@@ -4,6 +4,7 @@ namespace MI_TERRAZA.Models
 {
     public class T_PAGO
     {
+        [Key]
         public int PAGO_ID { get; set; }
         [Required(ErrorMessage = "Este campo es obligatorio")]
         [Display(Name = "Fecha De Pago")]

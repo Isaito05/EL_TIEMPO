@@ -5,6 +5,7 @@ namespace MI_TERRAZA.Models
 {
     public class T_DIRECCION
     {
+        [Key]
         public int DIR_ID { get; set; }
         [Required(ErrorMessage = "Este campo es obligatorio")]
         [Display(Name = "Tipo De Direccion")]

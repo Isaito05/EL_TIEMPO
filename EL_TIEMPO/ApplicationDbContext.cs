@@ -25,12 +25,13 @@ namespace EL_TIEMPO
         public DbSet<T_PRO_PROV>? T_PRO_PROV { get; set; }
         public DbSet<T_PRODUCTO>? T_PRODUCTO { get; set; }
         public DbSet<T_PROVEEDOR>? T_PROVEEDOR { get; set; }
-        public DbSet<T_RGU_USUARIO>? T_RGU_USUARIOO { get; set; }
+        public DbSet<T_RGU_USUARIO>? T_RGU_USUARIO { get; set; }
         public DbSet<T_SUMINISTRA>? T_SUMINISTRA { get; set; }
         public DbSet<T_TELEFONO>? T_TELEFONO { get; set; }
         public DbSet<T_TELEFONO_PROV>? T_TELEFONO_PROV { get; set; }
         public DbSet<T_TRAB_PAGO>? T_TRAB_PAGO { get; set; }
         public DbSet<T_TRAB_PRES>? T_TRAB_PRES { get; set; }
         public DbSet<T_TRABAJADOR>? T_TRABAJADOR { get; set; }
+        
     }
 }

@@ -11,8 +11,8 @@ namespace MI_TERRAZA.Models
         [EmailAddress(ErrorMessage = "Este campo debe contener @example.com")]
         [Display(Name = "Correo :")]
         [Required(ErrorMessage = "Este campo es obligatorio")]
-        [ForeignKey("T_PROVEEDOR")]
-        public string CORPROV_DIRECCION { get; set; } = null!;
+        [ForeignKey("CORPROV_PROV_ID")]
+        public int CORPROV_PROV_ID { get; set; } 
         public T_PROVEEDOR? T_PROVEEDOR { get; set; }
     }
 }

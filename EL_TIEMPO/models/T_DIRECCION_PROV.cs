@@ -5,6 +5,7 @@ namespace MI_TERRAZA.Models
 {
     public class T_DIRECCION_PROV
     {
+        [Key]
         public int DIRPROV_ID { get; set; }
         [Required(ErrorMessage = "Este campo es obligatorio")]
         [Display(Name = "Tipo De Direccion")]
@@ -14,7 +15,7 @@ namespace MI_TERRAZA.Models
         public string? DIRPROV_VALOR { get; set; }
         [Required(ErrorMessage = "Este campo es obligatorio")]
         [Display(Name = "Id del Proovedor")]
-        [ForeignKey("T_PROVEEDOR")]
+        [ForeignKey("DIRPROV_PROV_ID")]
         public int DIRPROV_PROV_ID { get; set; }
         public T_PROVEEDOR? T_PROVEEDOR { get; set; }
     }

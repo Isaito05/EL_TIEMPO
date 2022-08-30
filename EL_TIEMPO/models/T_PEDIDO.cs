@@ -6,6 +6,7 @@ namespace MI_TERRAZA.Models
     [Table("T_PEDIDO")]
     public class T_PEDIDO
     {
+        [Key]
         public int PED_ID { get; set; }
         [Required(ErrorMessage = "Este campo es obligatorio")]
         [Display(Name = "Estado Del Pedido :")]
