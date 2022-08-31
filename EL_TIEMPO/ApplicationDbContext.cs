@@ -1,12 +1,11 @@
 ﻿using MI_TERRAZA.Models;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace EL_TIEMPO
 {
-    public class ApplicationDbContext :  IdentityDbContext
+    public class ApplicationDbContext :  DbContext
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)//contrusctor de la clase
         {
 
         }
