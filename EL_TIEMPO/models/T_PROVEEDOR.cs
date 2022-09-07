@@ -9,6 +9,7 @@ namespace MI_TERRAZA.Models
 
         [Required(ErrorMessage = "Este campo es obligatorio")]
         [Display(Name = "Nombre Del Proveedor : :")]
-        public string PROV_NOMBRE { get; set; } = null!;
+        public string? PROV_NOMBRE { get; set; }
+
     }
 }

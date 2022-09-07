@@ -29,7 +29,10 @@ namespace EL_TIEMPO.Controllers
           {
               return NotFound();
           }
-            return await _context.T_DIRECCION_PROV.ToListAsync();
+            return await _context.T_DIRECCION_PROV
+                               .Include("T_PROVEEDOR")
+                               .OrderBy(x =>x.DIRPROV_VALOR)
+                               .ToListAsync();
         }
 
         // GET: api/T_DIRECCION_PROV/5

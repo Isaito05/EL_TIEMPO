@@ -1,9 +1,10 @@
 ﻿using MI_TERRAZA.Models;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace EL_TIEMPO
 {
-    public class ApplicationDbContext :  DbContext
+    public class ApplicationDbContext : DbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)//contrusctor de la clase
         {
@@ -31,6 +32,5 @@ namespace EL_TIEMPO
         public DbSet<T_TRAB_PAGO>? T_TRAB_PAGO { get; set; }
         public DbSet<T_TRAB_PRES>? T_TRAB_PRES { get; set; }
         public DbSet<T_TRABAJADOR>? T_TRABAJADOR { get; set; }
-        
     }
 }
